@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  color: #6d5d4b;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 85vh min-content 40vw repeat(3, min-content); }
+
+.sidebar {
+  background-color: orangered; }
+
+.header {
+  background-color: grey; }
+
+.realtors {
+  background-color: purple; }
+
+.features {
+  background-color: black; }
+
+.story__content {
+  background-color: greenyellow; }
+
+.story__picture {
+  background-color: powderblue; }
+
+.home {
+  background-color: pink; }
+
+.gallery {
+  background-color: red; }
+
+.footer {
+  background-color: cyan; }
