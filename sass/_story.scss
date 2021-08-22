@@ -1,10 +1,12 @@
 .story{
 
-    &__content{
-        background-color: greenyellow;
-    }
-
     &__picture{
         background-color: powderblue;
+        grid-column : full-content-start / col-end 4; 
     }
+    &__content{
+        background-color: greenyellow;
+        grid-column : col-start 5 / full-content-end;
+    }
+
 }
