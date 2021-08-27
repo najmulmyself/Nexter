@@ -7,12 +7,28 @@
     &__content{
         grid-column : col-start 5 / full-content-end;
 
-        padding: 6rem;
+        padding: 6vw; // it will strech available 6vw 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        //if we set display: flex a small problem arise which is the button takes all the available space whice mease strech.
+        // to fix this we need to tell flexbox should start from left.
+
+        align-items: flex-start;
+
+        // we can manage the container in the middle by using grid also
+
+        // display : grid;
+        // align-content: center;
+        // justify-content: start;
+
     }
 
     &__text{
         font-size: 1.1rem;
         font-style: italic;
+
+        margin-bottom: 3rem;
     }
 
 }

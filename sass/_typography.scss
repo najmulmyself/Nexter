@@ -42,8 +42,8 @@
     color: $color-grey-dark-1;
   }
 }
-.btn{
-  border: none ;
+.btn {
+  border: none;
   background-color: $color-primary;
   color: #fff;
   border-radius: 0;
@@ -54,7 +54,20 @@
   padding: 1rem;
   transition: all 0.2s;
 
-  &:hover{
+  &:hover {
     background-color: $color-primary-dark;
   }
+}
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-hg {
+  margin-bottom: 8rem;
 }
