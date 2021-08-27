@@ -3,6 +3,68 @@
   margin: 15rem 0;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit , minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   grid-gap: 7rem;
 }
+.home {
+  background-color: $color-grey-light-1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__img {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 /2;
+    z-index: 1;
+    position: relative;
+  }
+  &__like {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    fill: $color-primary;
+    height: 1.5rem;
+    width: 1.5rem;
+    z-index: 2;
+    justify-self: end;
+    margin: 0.7rem;
+  }
+  &__name {
+    grid-column: 1 / -1;
+
+    background-color: $color-secondary;
+    padding: 1rem;
+    color: #fff;
+    font-family: $font-display;
+    width: 85%;
+    margin-top: -1rem;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    z-index: 200;
+  }
+  &__location,
+  &__rooms,
+  &__area,
+  &__price {
+    //   padding: 1.5rem;
+    margin: 1.7rem 1rem;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    svg {
+      margin-right: 1rem;
+      fill: $color-primary;
+      height: 1.2rem;
+      width: 1.2rem;
+    }
+    p {
+    }
+  }
+
+  &__btn {
+    grid-column: 1 / -1;
+  }
+}
+// .u--flex {
+//   display: flex;
+// }

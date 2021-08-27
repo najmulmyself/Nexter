@@ -19,6 +19,10 @@ body {
   grid-template-rows: 85vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-content-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-content-end]; }
 
+::selection {
+  background-color: #c69963;
+  color: #fff; }
+
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
@@ -143,6 +147,49 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   grid-gap: 7rem; }
+
+.home {
+  background-color: #f9f7f6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .home__img {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 /2;
+    z-index: 1;
+    position: relative; }
+  .home__like {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    fill: #c69963;
+    height: 1.5rem;
+    width: 1.5rem;
+    z-index: 2;
+    justify-self: end;
+    margin: 0.7rem; }
+  .home__name {
+    grid-column: 1 / -1;
+    background-color: #101d2c;
+    padding: 1rem;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    width: 85%;
+    margin-top: -1rem;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    z-index: 200; }
+  .home__location, .home__rooms, .home__area, .home__price {
+    margin: 1.7rem 1rem;
+    display: flex;
+    justify-content: center; }
+    .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
+      margin-right: 1rem;
+      fill: #c69963;
+      height: 1.2rem;
+      width: 1.2rem; }
+  .home__btn {
+    grid-column: 1 / -1; }
 
 .gallery {
   background-color: red;
